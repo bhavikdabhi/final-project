@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ProjectHub</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  
+  </head>
+
+  <body>
+    
+    <nav class="bg-gray-1000 max-w-full">
+      <div class="mx-auto px-2 sm:px-6 lg:px-8 relative flex h-10 items-center justify-between position-fixed">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button type="button" id="mobile-menu-button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <h1 class="m-0">
+              <a href="#">
+                <img class="header-logo-image w-auto" src="dist/images/logo.svg" alt="Logo">
+              </a>
+            </h1>
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium no-underline" aria-current="page">Home</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium no-underline">Team</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium no-underline">Projects</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium no-underline">Contact us</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium no-underline">Feedback</a>
+              <div class="flex flex-shrink-0 items-center">
+                <h1 class="m-0">
+                  <a href="#">
+                    <img class="header-logo-image w-auto" src="dist/images/logo.svg" alt="Logo">
+                  </a>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-0 sm:static sm:inset-auto sm:ml-2 sm:pr-0">
+          <div class="absolute top-0 right-0 mt-2 mr-4 z-10">
+            <button class="bg-custom-color text-white font-bold py-0 px-0 rounded flex items-center" id="showFormButton">
+              <a href="#" class="bg-custom-color text-white hover:text-white rounded-md px-3 py-2 text-sm font-large flex items-center no-underline mr-3">Login
+                <!-- <svg class="h-2 w-2" fill="none" viewBox="0 0 2 2" stroke-width="1.6" stroke="currentColor" aria-hidden="true"></svg> -->
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile menu, show/hide based on menu state -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium no-underline" aria-current="page">Home</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium no-underline">Team</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium no-underline">Projects</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium no-underline">Contact us</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium no-underline">Feedback</a>
+          <div class="flex flex-shrink-0 items-center">
+            <h1 class="m-0">
+              <a href="#">
+                <img class=" text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium no-underline header-logo-image w-auto" src="dist/images/logo.svg" alt="Logo">
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+        <main>
+          <section class="hero">
+            <div class="container">
+              <div class="hero-inner">
+                <div class="hero-copy">
+                  <h1 class="hero-title mt-0">Error Solveing System</h1>
+                  <p class="hero-paragraph">Here Students and profesors upload thair project and solve the error on their projects </p>
+                  <div class="hero-cta">
+                    <a class="button button-primary" href="#showFormButton"
+                       id="showFormButton">Login now</a> <a class="button" href="#">Get
+                      in touch</a></div>
+                </div>
+                <div class="hero-figure anime-element">
+                  <svg class="placeholder " width="528" height="396" viewBox="0
+                    0 528 396">
+                    <rect width="528" height="396" style="fill:transparent;" />
+                    </svg>
+                    <div class="hero-figure-box hero-figure-box-01"
+                      data-rotation="45deg"></div>
+                    <div class="hero-figure-box hero-figure-box-02"
+                      data-rotation="-45deg"></div>
+                    <div class="hero-figure-box hero-figure-box-03"
+                      data-rotation="0deg"></div>
+                    <div class="hero-figure-box hero-figure-box-04"
+                      data-rotation="-135deg"></div>
+                    <div class="hero-figure-box hero-figure-box-05"></div>
+                    <div class="hero-figure-box hero-figure-box-06"></div>
+                    <div class="hero-figure-box hero-figure-box-07"></div>
+                    <div class="hero-figure-box hero-figure-box-08"
+                      data-rotation="-22deg"></div>
+                    <div class="hero-figure-box hero-figure-box-09"
+                      data-rotation="-52deg"></div>
+                    <div class="hero-figure-box hero-figure-box-10"
+                      data-rotation="-50deg"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+           </main>
+          </div>
+          </body>
+          </div>
+        </div>
+          <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobileMenuButton = document.getElementById('mobile-menu-button');
+      var mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+          </body>
+</html>
+      <html>
+        <style>
+            :root{
+    --color-black: #242830;
+    --color-blue: linear-gradient(65deg, #0270D7 0, #0F8AFD 100%);
+
+}
+*{
+  text-decoration-line: none;
+}
+          #blurBackground {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5);
+              background-color: transparent;
+              backdrop-filter: blur(10px);
+              display: none;
+              justify-content: center;
+              align-items: center;
+              transition: opacity 0.3s ease;
+              padding-left: 500px;
+             
+          }
+          #formContainer {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              display: top;
+              backdrop-filter: blur(50px);
+              
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+              transform: scale(0);
+              transition: transform 0.3s ease;
+          }
+          #blurBackground.show {
+              display: flex;
+              opacity: 5;
+          }
+          #formContainer.show {
+              transform: scale(1);
+          }
+          #numberInput {
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              width: 250px;
+              font-size: 16px;
+          }
+          button {
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 16px;
+              transition: background-color 0.3s ease, transform 0.3s ease;
+          }
+          #showFormButton {
+              background-color: #007bff;
+              color: #fff;
+          }
+          #verifyButton {
+              background-color:  #0270D7;
+              color: #fff;
+          }
+          #closeButton {
+              background-color: #dc3545;
+              color: #fff;
+              margin-top: 10px;
+          }
+          button:hover {
+              transform: translateY(-2px);
+          }
+          button:active {
+              transform: translateY(1px);
+          }
+      </style>
+        <body>
+
+        <script>
+          document.getElementById('showFormButton').addEventListener('click', function() {
+              document.getElementById('blurBackground').classList.add('show');
+              document.getElementById('formContainer').classList.add('show');
+          });
+  
+          document.getElementById('closeButton').addEventListener('click', function() {
+              document.getElementById('blurBackground').classList.remove('show');
+              document.getElementById('formContainer').classList.remove('show');
+          });
+  
+          document.getElementById('verifyButton').addEventListener('click', function() {
+              const number = document.getElementById('numberInput').value.trim();
+              if (number !== '') {
+                  verifyNumber(number);
+              }
+          });
+  
+          function verifyNumber(number) {
+              fetch('verify.php', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ number: number })
+              })
+              .then(response => response.json())
+              .then(data => {
+                  if (data.valid) {
+                      window.location.href = './log.php';
+                  } else {
+                      alert('Number not found');
+                  }
+              })
+              .catch(error => {
+                  console.error('Error:', error);
+              });
+          }
+      </script>      
+          <div id="blurBackground" class="center mt-5 mr-5 z-500">
+            <form method="post" action="../logreg/fetch_user.php" class="center
+              mt-5 mr-5 z-500">
+              <div id="formContainer">
+                <input type="text" id="numberInput" id="en_no" name="en_no"
+                  placeholder="Enter your number">
+                <button id="verifyButton">Verify</button>
+                <button id="closeButton">Close</button>
+              </div>
+            </form>
+          </div>
+        </body>
+        </html>

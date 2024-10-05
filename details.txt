@@ -1,0 +1,9 @@
+Main page : Homeage/home.html
+run:  npm run build 
+
+goto : Dashbord/ 
+run : npm run build
+ 
+goto : chatapp/ .\server.js
+
+run in :http://localhost:8090/working/final%20project/homepage/
