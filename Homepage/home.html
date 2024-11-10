@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   
   </head>
 
@@ -128,10 +129,77 @@
               </div>
             </section>
            </main>
-          </div>
-          </body>
-          </div>
-        </div>
+  
+
+        <!-- About team -->
+        <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+                <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our team</h2>
+                    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+                </div>
+                <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <!-- Profile 1 -->
+                    <div class="text-center text-gray-500 dark:text-gray-400">
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
+                        <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">Bonnie Green</a>
+                        </h3>
+                        <p>CEO/Co-founder</p>
+                        <!-- Social Icons -->
+                        <ul class="flex justify-center mt-4 space-x-4">
+                            <!-- Each <li> here contains a social media icon similar to above -->
+                        </ul>
+                    </div>
+                    <!-- Profile 2 -->
+                    <div class="text-center text-gray-500 dark:text-gray-400">
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png" alt="Helene Avatar">
+                        <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">Helene Engels</a>
+                        </h3>
+                        <p>CTO/Co-founder</p>
+                        <!-- Social Icons -->
+                        <ul class="flex justify-center mt-4 space-x-4">
+                            <!-- Each <li> here contains a social media icon similar to above -->
+                        </ul>
+                    </div>
+                    <!-- Profile 3 - Jese Leos -->
+                    <div class="text-center text-gray-500 dark:text-gray-400">
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar">
+                        <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">Jese Leos</a>
+                        </h3>
+                        <p>SEO & Marketing</p>
+                        <!-- Social Icons -->
+                        <ul class="flex justify-center mt-4 space-x-4">
+                            <li>
+                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><!-- Facebook icon path --></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><!-- Twitter icon path --></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><!-- GitHub icon path --></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><!-- Dribbble icon path --></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Add other profiles if needed -->
+                </div>
+            </div>
+        </section>
+        
+
           <script>
     document.addEventListener('DOMContentLoaded', function () {
       var mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -276,5 +344,6 @@
               </div>
             </form>
           </div>
+          
         </body>
         </html>
