@@ -38,7 +38,7 @@ if (isset($_POST['signIn'])) {
                 exec("node ./server.js > /dev/null 2>&1 &");
 
                 // Redirect to update profile
-                header("Location: ../logreg/update_profile.php");
+                header("Location: ../Dashbord/");
                 exit();
             } else {
                 echo "Something went wrong. Please try again!";

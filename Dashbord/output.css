@@ -2040,6 +2040,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2423,17 +2428,18 @@ li {
 :root {
   --poppins: 'Poppins', sans-serif;
   --lato: 'Lato', sans-serif;
-  --light: #F9F9F9;
+  --light: #1b1b1d;
   --blue: #3C91E6;
-  --light-blue: #CFE8FF;
-  --grey: #eee;
+  --light-blue: #2b2b2c;
+  --grey: #2b2b2c;
   --dark-grey: #AAAAAA;
-  --dark: #342E37;
+  --dark: #4A90E2;
   --red: #DB504A;
   --yellow: #FFCE26;
   --light-yellow: #FFF2C6;
   --orange: #FD7238;
   --light-orange: #FFE0D3;
+  --light-blu: #BBDEFB;
 }
 
 html {
@@ -2537,6 +2543,7 @@ body {
   right: 0;
   box-shadow: 20px -20px 0 var(--grey);
   z-index: -1;
+  color: white;
 }
 
 #sidebar .side-menu li a {
@@ -2755,7 +2762,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: var(--dark);
+  color: white;
 }
 
 #content main .head-title .left .breadcrumb {
@@ -2783,7 +2790,7 @@ body {
   padding: 0 16px;
   border-radius: 36px;
   background: var(--blue);
-  color: var(--light);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2818,7 +2825,7 @@ body {
 }
 
 #content main .box-info li:nth-child(1) .bx {
-  background: var(--light-blue);
+  background: var(--light-blu);
   color: var(--blue);
 }
 
@@ -2835,7 +2842,7 @@ body {
 #content main .box-info li .text h3 {
   font-size: 24px;
   font-weight: 600;
-  color: var(--dark);
+  color: white;
 }
 
 #content main .box-info li .text p {
@@ -2869,6 +2876,7 @@ body {
   margin-right: auto;
   font-size: 24px;
   font-weight: 600;
+  color: white;
 }
 
 #content main .table-data .head .bx {
@@ -2975,6 +2983,14 @@ body {
 
 /* CONTENT */
 
+/* Ensure all icons have a white color */
+
+/* For Boxicons and similar libraries */
+
+.bxs, .bx-smile, .bx-dashboard, .bx-shopping-bag-alt, .bx-message-dots, .bx-cloud-download, .bx-search, .bx-chevron-right, .bx-plus, .bx-filter {
+  color: white !important;
+}
+
 @media screen and (max-width: 768px) {
   #sidebar {
     width: 200px;
@@ -3000,7 +3016,7 @@ body {
     height: auto;
     background: transparent;
     border-radius: none;
-    color: var(--dark);
+    color: white;
   }
 
   #content nav form.show .form-input input {

@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Database connection configuration
 $servername = "localhost";
 $username = "root";
@@ -18,7 +18,7 @@ try {
     $fileId = $_GET['id'];
 
     // Prepare SQL statement to prevent SQL injection
-    $sql = "SELECT filename, data FROM file_uploads WHERE id = ?";
+    $sql = "SELECT filename, data, enrollment_no FROM file_uploads WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     // Bind parameter to prevent SQL injection
@@ -33,6 +33,7 @@ try {
       $row = $result->fetch_assoc();
       $filename = $row['filename'];
       $data = $row['data'];
+      $enrollment_no = $row['enrollment_no']; // Retrieve enrollment number
 
       // Get file extension from filename
       $file_extension = pathinfo($filename, PATHINFO_EXTENSION);
@@ -59,6 +60,11 @@ try {
 
       // Output the file data
       echo $data;
+
+      // Display enrollment number
+      echo "<br><br>";
+      echo "Uploaded by Enrollment Number: " . htmlspecialchars($enrollment_no); // Display enrollment number safely
+
       exit; // Stop further execution
     } else {
       // File not found in the database

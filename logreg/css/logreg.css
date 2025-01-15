@@ -5,11 +5,12 @@
     font-family:"poppins",sans-serif;
 }
 body{
-    background-color: #c9d6ff;
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    background-color: #fff ;
+    color:white;
+    background:linear-gradient(65deg, #242830 60%, #4A90E2 40%);
 }
 .container{
-    background:#fff;
+    background:#2b2b2c;
     width:450px;
     padding:1.5rem;
     margin:50px auto;
@@ -27,7 +28,7 @@ form{
     margin-bottom:0.4rem;
 }
 input{
-    color:inherit;
+    color:white;
     width:100%;
     background-color:transparent;
     border:none;
@@ -42,18 +43,18 @@ input{
 }
 .input-group i{
     position:absolute;
-    color:black;
+    color:#4A90E2;
 }
 input:focus{
     background-color: transparent;
     outline:transparent;
-    border-bottom:2px solid hsl(327,90%,28%);
+    border-bottom:2px solid #4A90E2;
 }
 input::placeholder{
     color:transparent;
 }
 label{
-    color:#757575;
+    color:#4A90E2;
     position:relative;
     left:1.2em;
     top:-1.3em;
@@ -62,7 +63,7 @@ label{
 }
 input:focus~label,input:not(:placeholder-shown)~label{
     top:-3em;
-    color:hsl(327,90%,28%);
+    color:#4A90E2;
     font-size:15px;
 }
 .recover{
@@ -73,10 +74,10 @@ input:focus~label,input:not(:placeholder-shown)~label{
 }
 .recover a{
     text-decoration:none;
-    color:rgb(125,125,235);
+    color:#4A90E2;
 }
 .recover a:hover{
-    color:blue;
+    color:#ffffff;
     text-decoration:underline;
 }
 .btn{
@@ -86,7 +87,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
     outline:none;
     border:none;
     width:100%;
-    background:rgb(125,125,235);
+    background:#4A90E2;
     color:white;
     cursor:pointer;
     transition:0.9s;
@@ -103,7 +104,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
     text-align:center;
 }
 .icons i{
-    color:rgb(125,125,235);
+    color:#4A90E2;
     padding:0.8rem 1.5rem;
     border-radius:10px;
     font-size:1.5rem;
@@ -115,7 +116,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
 .icons i:hover{
     background:#07001f;
     font-size:1.6rem;
-    border:2px solid rgb(125,125,235);
+    border:2px solid #4A90E2;
 }
 .links{
     display:flex;
@@ -125,7 +126,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
     font-weight:bold;
 }
 button{
-    color:rgb(125,125,235);
+    color:#4A90E2;
     border:none;
     background-color:transparent;
     font-size:1rem;
