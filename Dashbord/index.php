@@ -188,56 +188,65 @@ $redirectUrl = "http://$ipAddress:$port/";
 </head>
 
 <body>
-    <section id="sidebar">
-        <a href="#" class="brand">
-            <i class='bx bxs-smile white'></i>
-            <span class="text">ProjectHub</span>
-        </a>
-        <ul class="side-menu top">
-            <li class="active">
-                <a href="#">
-                    <i class='bx bxs-dashboard'></i>
-                    <span class="text">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="../fileupolad/in.php">
-                    <i class='bx bxs-shopping-bag-alt'></i>
-                    <span class="text">Projects</span>
-                </a>
-            </li>
-            <li>
-                <div>
-                    <button type="button" class="" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                        <a>
-                            <i class='bx bxs-message-dots'></i>
-                            <span class="text">Message</span>
-                        </a>
-                    </button>
-                </div>
+<section id="sidebar">
+    <a href="#" class="brand">
+        <i class='bx bxs-smile white'></i>
+        <span class="text">ProjectHub</span>
+    </a>
+    <ul class="side-menu top">
+        <li class="active">
+            <a href="#">
+                <i class='bx bxs-dashboard'></i>
+                <span class="text">Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="../fileupolad/in.php">
+                <i class='bx bxs-shopping-bag-alt'></i>
+                <span class="text">Projects</span>
+            </a>
+        </li>
+        <li>
+            <div>
+                <button type="button" class="" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <a>
+                        <i class='bx bxs-message-dots'></i>
+                        <span class="text">Message</span>
+                    </a>
+                </button>
+            </div>
 
-                <ul id="user-menu" class="hidden">
-                    <!-- Dropdown menu, show/hide based on menu state -->
-                    <li><a href="../ChatAppn/" class="" role="menuitem" tabindex="-1" id="user-menu-item-0"> <i
-                                class='bx bxs-message-dots'></i>Personal Chat</a></li>
-                    <li><a href="http://127.0.0.1:8000/" class="" role="menuitem" tabindex="-1" id="user-menu-item-1">
-                            <i class='bx bxs-message-dots'></i>Global Chat</a></li>
-                </ul>
-
-
-
-            </li>
-        </ul>
-        <ul class="side-menu">
-            <li></li>
-            <li>
-                <a href="../homepage/" class="logout">
-                    <i class='bx bxs-log-out-circle'></i>
-                    <span class="text">Logout</span>
-                </a>
-            </li>
-        </ul>
-    </section>
+            <ul id="user-menu" class="hidden">
+                <!-- Dropdown menu, show/hide based on menu state -->
+                <li>
+                    <a href="../ChatAppn/" class="" role="menuitem" tabindex="-1" id="user-menu-item-0">
+                        <i class='bx bxs-message-dots'></i>Personal Chat
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:8000/" class="" role="menuitem" tabindex="-1" id="user-menu-item-1">
+                        <i class='bx bxs-message-dots'></i>Global Chat
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href=""> <!-- Update link to the appropriate quiz page -->
+                <i class='bx bxs-quiz' style="color: #3C91E6;">></i>
+                <span class="text">Quiz</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="side-menu">
+        <li></li>
+        <li>
+            <a href="../homepage/" class="logout">
+                <i class='bx bxs-log-out-circle'></i>
+                <span class="text">Logout</span>
+            </a>
+        </li>
+    </ul>
+</section>
 
     <section id="content">
         <nav>
