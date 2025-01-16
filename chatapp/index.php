@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f7f7f7;
+    background: #2b2b2c;
     padding: 0 10px;
     margin: 0;
     height: 100%;
@@ -25,7 +25,7 @@
     flex-direction: column;
 }
 header {
-    background-color: #007bff;
+    background-color: #3C91E6;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -50,7 +50,7 @@ header {
 #sendButton {
     width: 80px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #3C91E6;
     color: #fff;
     border: none;
     border-radius: 5px;
